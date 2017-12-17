@@ -109,7 +109,7 @@ public class Table {
 		int[] bet= new int[4];
 		int i = 0;
 		for(Player p : allPlayer) {
-			bet[i] = p.makeBet();
+			bet[i] = p.makeBet();//?????
 			i++;
 			}
 		return bet;
