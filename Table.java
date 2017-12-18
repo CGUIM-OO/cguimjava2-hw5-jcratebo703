@@ -50,8 +50,8 @@ public class Table {
 		 boolean hit = false;
 		 for(Player p : allPlayer) {
 			 do{				 	
-				 	Table tbl = new Table(4);
-					hit=p.hit_me(tbl);
+				 	//Table tbl = new Table(4);
+					hit=p.hit_me(this);
 					if(hit & p.getTotalValue() < 21){
 						System.out.println("Hit!"+ p.getName()+ "¡¦s cards now");
 						ArrayList<Card> tem = new ArrayList<Card>();
@@ -71,8 +71,8 @@ public class Table {
 	private void ask_dealer_about_hits() {
 		boolean hit = false;
 		 do{				 	
-			 	Table tbl = new Table(4);
-				hit=dealer.hit_me(tbl);
+			 	//Table tbl = new Table(4);
+				hit=dealer.hit_me(this);
 				if(hit & dealer.getTotalValue() < 21){
 					System.out.println("Hit!"+ "Dealer"+ "¡¦s cards now");
 					ArrayList<Card> tem = new ArrayList<Card>();
